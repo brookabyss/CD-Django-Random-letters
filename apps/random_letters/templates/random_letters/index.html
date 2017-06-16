@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Letters</title>
+  </head>
+  <body>
+    <h3>Attempt # {{attempt}}</h3>
+    <h1>{{random_word}}</h1>
+    <form class="" action="/generate" method="get">
+      {% csrf_token %}
+      <input type="submit" name="submit" value="Generate">
+    </form>
+    <form class="" action="/reset" method="get">
+      {% csrf_token %}
+      <input type="submit" name="submit" value="reset">
+    </form>
+  </body>
+</html>
